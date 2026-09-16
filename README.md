@@ -192,14 +192,6 @@ In development, the backend starts two scheduled jobs:
 
 The report job generates a previous-month summary, requests three AI insights, sends an email, and records the report status.
 
-## Security Notes
-
-- Keep `.env` files out of Git.
-- Rotate credentials immediately if they are shared or exposed.
-- Use different secrets for access and refresh tokens.
-- URL-encode special characters in MongoDB passwords.
-- Restrict MongoDB Atlas network access to trusted IP addresses.
-- Use a verified email domain for production Resend delivery.
 
 ## Project Purpose
 
