@@ -368,7 +368,6 @@ const TransactionForm = (props: {
                           field.onChange(date); // This updates the form value
                         }}
                         disabled={(date) => date < new Date("2023-01-01")}
-                        initialFocus
                       />
                     </PopoverContent>
                   </Popover>
