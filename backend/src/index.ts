@@ -33,12 +33,15 @@ app.use(
   })
 );
 
-app.get("/", (req, res) => {
-  res.status(200).json({
-    success: true,
-    message: "Finora API is running",
-  });
-});
+app.get(
+  "/",
+  asyncHandler(async (req: Request, res: Response, next: NextFunction) => {
+    throw new BadRequestException("This is a test error");
+    res.status(HTTPSTATUS.OK).json({
+      message: "Hello Subcribe to the channel",
+    });
+  })
+);
 
 app.use(`${BASE_PATH}/auth`, authRoutes);
 app.use(`${BASE_PATH}/user`, passportAuthenticateJwt, userRoutes);
