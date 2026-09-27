@@ -100,7 +100,7 @@ const ImportTransactionModal = () => {
   <DialogContent className="max-w-2xl min-h-[40vh]">
     {renderStep()}
   </DialogContent>
-</Dialog>
+</Dialog> 
   );
 };
 
