@@ -3,8 +3,6 @@ import {
   Dialog,
   DialogContent,
 } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
-import { ImportIcon } from "lucide-react";
 import FileUploadStep from "./fileupload-step";
 import ColumnMappingStep from "./column-mapping-step";
 import { CsvColumn, TransactionField } from "@/@types/transaction.type";
