@@ -96,15 +96,7 @@ const ImportTransactionModal = () => {
 
   return (
     <Dialog open={open} onOpenChange={handleClose}>
-    <Button
-      variant="outline"
-      className="!shadow-none !cursor-pointer !border-gray-500
-       !text-white !bg-transparent"
-      onClick={() => setOpen(true)}
-    >
-      <ImportIcon className="!w-5 !h-5" />
-      Bulk Import
-    </Button>
+    
   <DialogContent className="max-w-2xl min-h-[40vh]">
     {renderStep()}
   </DialogContent>
